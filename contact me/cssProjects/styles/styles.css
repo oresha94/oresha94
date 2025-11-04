@@ -1,0 +1,161 @@
+header,
+nav,
+footer {
+    background-color: aquamarine;
+    color: blueviolet;
+    text-align: center;
+    width: 100%;
+    /*ensures background stretches the screen */
+}
+
+body {
+    background-color: pink;
+    margin: 0;
+    Padding: 0;
+    font-family: impact, haettenschweiler, 'Ariel Narrow bold';
+    /*differnt fonts*/
+}
+
+
+
+section {
+    border: 1px pink; 
+    padding: 20px;
+    margin: 20px;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 2px 6px gray;
+    
+}
+
+/* project 1: buttons*/
+button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px; 
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-hover:hover {
+    background-color: blue;
+}
+
+.btn-glow {
+    background-color: chartreuse;
+    color: aquamarine;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 10px pink;
+}
+
+/*Project 2:Photo gallery*/
+.gallery {
+    display: flex;
+    /*aligns images in a horizontal line*/
+    flex-wrap: wrap;
+    /* moves images to the next line if there isnt enough space*/
+    gap: 50px;
+    /* Adds space between each image*/
+    justify-content: center;
+
+}
+
+.gallery img {
+    width: 180px;
+    /*sets each image's width*/
+    height: 120px;
+    /* Sets each image's height*/
+    object-fit: cover;
+    /*Ensure the image filles the box without distirtion*/
+    border-radius: 6px;
+    /*Rounds the image corners slightly*/
+    transition: all 0.3s;
+    /* Smoothly animates changes on hover */
+
+}
+
+/* Hover Effect 1:Rotate and Dropshadow */
+.hover-one:hover {
+    transform: rotate(360deg) scale(1.65);
+    /*Rotates the image by 5 degrees and enlarges slightly */
+    box-shadow: 0 8px 15px yellowgreen;
+    /* adds a soft shadow behind the image (when hovered)*/
+    opacity: 1;
+    /*Keeps full opacity throughtout transition */
+}
+
+/* Hoover Effect 2: Grayscale to Color Fade */
+.hover-two:hover {
+    filter: grayscale(100%);
+    /*Starts the image in black and white */
+    transition: filter 0.4s, transform 0.3s;
+    /*Smoothly animates both filter (gray) and mpvement */
+    transform: scale(1.65);
+    /* Slightly enlarges the image */
+}
+
+/* Hover Effect 3: Scale and Fade */
+.hover-three:hover {
+    transform: scale(1.65);
+    /* Slightly enlarges image on hover */
+    opacity: 0.5;
+    /* Makes the image slightly transparent*/
+
+}
+
+/*Project 3:Styled quote Box*/
+.quote-section {
+    text-align: center;
+    /* Centers all text and elements inside the section*/
+    max-width: 30%;
+    /* limits the section's width to 30% of the page*/
+}
+
+.quote-section h3 {
+    color: blueviolet;
+    font-family: 'Merriweather', serif;
+    /* Uses Merriweather and the classic serif font for a refined look*/
+    margin: bottom 15px;
+    /*Adds space below the heading */
+    text-transform: uppercase;
+    /* Makes all heading 3 letters uppercase*/
+    letter-spacing: 1px;
+    /* Adds small spacing betweeen letters for readability/cool factor*/
+}
+
+.quote-box {
+    font-family: 'Georgia', serif; /* Uses Georgia and the classic serif font for a refined*/
+ Font-style: italic;
+    /* Italicizes text to make it look like an actual quote*/
+    background-image: linear-gradient(135deg);
+    background-blend-mode:multiply;
+    /* Blends the texture softly into the color*/
+    padding: 20px 30px;
+    /* adds inner spacing around the quote*/
+    border-left: 6px solid;
+    /*adds a thick, dark brown stripe on the left*/
+    border-radius:10px;
+    /*Rounds the corners slightly for a softer look*/
+    box-shadow: 0 4px 10px gray;
+    /* Adds a light shadow for depth*/
+    color: gray;
+        /* Sets the quote text to a charcoal gray*/
+    transition: transform 0.2s ease, box-shadow 0.2 ease, background 0.2s ease;
+}
+
+.quote-box:hover {
+    transform: translate(-4px);
+    /* Slighly lift the box when hovered*/
+    box-shadow: 0 6px 14px goldenrod;
+    /*Makes the shadow deeper to enhance the lift*/
+    background-color: linear-gradient(135deg, pink, green);
+}
+
+.quote-box cite {
+    display: block;
+    /*Makes the citation appear on its own*/
+}
