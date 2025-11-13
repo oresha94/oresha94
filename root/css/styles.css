@@ -1,0 +1,48 @@
+.section1 {
+    border: 5px solid black;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    background-color: hotpink;
+    width: 50%
+
+    
+}
+
+
+
+
+
+.roundImage {
+    width: 200px;
+    height: ;
+}
+
+/* project 2: photo gallery*/
+.gallery img {
+    width: 180px;
+    /* sets each image's width */
+    height: 120px
+        /* sets each image's height*/
+    ;
+    object- fit: cover;
+    /* ensure the image files the box without distortion*/
+    border: radius 6px;
+    /* rounds the image corners slightly*/
+    /* transition: all 0.3s;  */
+    smoothly animates changes on hover*/
+}
+
+/* Hover effect 1: Scale and fade */
+.hover-one:hover {
+    transform: rotate(360deg) scale(1.65);
+    /*rotates the image by 5 deggrees and enlarges slightly
+    box-shadows:0 8px 15px gray;/* adds a soft  shadow behind the image (whem hovered)*/
+    opacity: 1;
+    /* keeps full opacity throughout transition*/
+}
+
+/*Hover Effect 2: Grayscale to Color Fade*/
+.hover-t:{
+    filter: grayscale(100%);/*
+}
